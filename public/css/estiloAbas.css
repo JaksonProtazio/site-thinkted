@@ -1,0 +1,147 @@
+#sectionRep,.green{
+  background-color: white;
+}
+.TabControl{
+    margin-top: 30px;
+    width:100%;
+    overflow:hidden;
+    height:100%;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+.TabControl#header{
+    width:100%;
+    overflow:hidden;
+}
+
+.TabControl #content{
+    width:100%;
+    border: solid 2px #333131;
+    overflow:hidden;
+    height:100%;
+}
+
+.TabControl .abas{
+    display:inline;
+}
+
+.TabControl .abas li{
+    float: left;
+}
+.abas{
+    list-style:none;
+}
+
+div#header.row{
+    justify-content: center;
+    text-align: center;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+ul.abas{
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+.aba{
+    width:200px;
+    height:60px;
+
+    text-align:center;
+    padding-top:5px;
+    background: transparent/*rgba(52, 99, 233, 0.4)*/;
+    border-bottom-width: 0px;
+    transition: 1s;
+}
+
+.ativa{
+    width:200px;
+    height:60px;
+    border:solid 2px #333131/*rgba(75, 116, 208, 0.9)*/;
+    text-align:center;
+    padding-top:5px;
+    background-color: #333131/*rgba(75, 116, 208, 0.9)*/;
+    transition: 1s;
+}
+
+.ativa span, .selecionada span{
+    color:white;
+}
+
+span{
+    font-size: 20px;
+    color: #333131;
+}
+
+.TabControl #content{
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.TabControl .conteudo{
+    width:100%;
+    display:none;
+    height:100%;
+    color:#333131;
+}
+
+.selecionada{
+    width:200px;
+    height:60px;
+    border:solid 2px #707070/*rgba(75, 116, 208, 0.9)*/;
+    text-align:center;
+    padding-top:5px;
+    background: #707070/*rgba(75, 116, 208, 0.9)*/;
+
+}
+
+div.aba{
+    justify-content: center;
+    text-align: center;
+    border-left: solid 2px #707070/*rgba(75, 116, 208, 0.9)*/;
+    border-right: solid 2px #707070/*rgba(75, 116, 208, 0.9)*/;
+    border-top: solid 2px #707070/*rgba(75, 116, 208, 0.9)*/;
+    cursor: pointer;
+}
+
+div#content.row{
+    margin-left: 0;
+    margin-right: 0;
+    border: solid 2px #707070/*rgba(75, 116, 208, 0.9)*/;
+    border-radius: 8px;
+    min-height: 247px;
+}
+
+ul.abas.row li{
+    padding-right: 0;
+    padding-left: 0;
+}
+
+@media(min-width: 516px){
+    ul.abas.row li,  ul.abas.row li div{
+        width: 160px;
+    }
+}
+
+@media(max-width: 515px){
+    ul.abas.row li,  ul.abas.row li div{
+        width: 130px;
+    }
+}
+
+@media(max-width: 390px){
+    ul.abas.row li,  ul.abas.row li div{
+        width: 110px;
+    }
+}
+
+#softwares{
+    border-radius: 5px 0px 0px 0px;
+}
+
+#jogos{
+    border-radius: 0px 5px 0px 0px;
+}
