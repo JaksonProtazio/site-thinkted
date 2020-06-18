@@ -150,6 +150,15 @@
 				<div class="col-12 col-sm-6 col-md-4 col-lg-4 espacoEquipe linkEquipe">
 					<a href="#" target="_blank">
 						<div>
+							<img class="rounded-circle borda aumentar" src="{{asset('img/perfil_equipe/perfil23.jpeg')}}" alt="Generic placeholder image" width="140" height="140">
+							<h2 class="nome-perfil aumentar">Marcos Guibson</h2>
+						</div>
+					</a>
+				</div>
+
+				<div class="col-12 col-sm-6 col-md-4 col-lg-4 espacoEquipe linkEquipe">
+					<a href="#" target="_blank">
+						<div>
 							<img class="rounded-circle borda aumentar" src="{{asset('img/perfil_equipe/perfil22.jpg')}}" alt="Generic placeholder image" width="140" height="140">
 							<h2 class="nome-perfil aumentar">Marcela Pessoa</h2>
 						</div>

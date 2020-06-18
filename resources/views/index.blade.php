@@ -106,8 +106,8 @@
 			<!--Inicio - Quem Somos -->
 
 				<div id="quemSomos" class="row scroll">
-					<div class="escurecer">
-						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 paddingQuemSomos" id="innerQuemSomos">
+					<div class="escurecer container">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="innerQuemSomos">
 							<div><h2 class="titulos">O ThinkTEd</h2></div>
 
 							<h3 class="subtitulos anime" data-anime="left">Pesquisa e Desenvolvimento em Tecnologias Educacionais</h3>

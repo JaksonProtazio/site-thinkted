@@ -28,17 +28,31 @@
             <td>{{$album->created_at}}</td>
             <td>{{$album->update_at}}</td>
             <td>
-              <a href='#'>
-                <button type='button' class='btn btn-sm btn-primary'>Visualizar</button>
-              </a>
-              @can('album-edit')
-              <a href='#'>
-                <button type='button' class='btn btn-sm btn-warning'>Editar</button>
-              </a>
-              <a href='#'>
-                <button type='button' class='btn btn-sm btn-danger'>Apagar</button>
-              </a>
-              @endcan
+            <a href='#'>
+                    <button type='button' class='btn btn-sm btn-primary'>Visualizar</button>
+                  </a>
+                  @can('album-edit')
+                    <a href="{{route('editar.album',$album->id)}}">
+                      <button type='button' class='btn btn-sm btn-warning'>Editar</button>
+                    </a>
+
+
+                      <button type='submit' class='btn btn-sm btn-danger' data-toggle="modal" data-target="#confirm">Apagar</button>
+
+                      <div class="modal fade" id="confirm" role="dialog">
+                        <div class="modal-dialog modal-md">
+                          <div class="modal-content">
+                            <div class="modal-body">
+                              <p>Deseja apagar a notícia "{{$album->titulo_album}}"?</p>
+                            </div>
+                            <div class="modal-footer">
+                              <a href="#"><button type="button" class="btn btn-danger" id="delete">Apagar</button></a>
+                              <button type="button" data-dismiss="modal" class="btn btn-default" name="button">Cancelar</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                  @endcan
             </td>
           </tr>
         @endforeach

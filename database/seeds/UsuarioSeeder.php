@@ -14,7 +14,7 @@ class UsuarioSeeder extends Seeder
     {
       $dados = [
         'name' => 'Administrador',
-        'email' => 'hub_labted@uea.edu.br',
+        'email' => 'thinkted@uea.edu.br',
         'password' => bcrypt('2017Laue@')
       ];
 
