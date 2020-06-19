@@ -166,7 +166,7 @@
 											</div>
 
 											<div class="label-linha-de-pesquisa">
-												Desenvolvimento Web
+											Cognição e Desenvolvimento Humano
 											</div>
 										</a>
 									</div>
@@ -196,13 +196,13 @@
 									</div>
 
 									<div class="col-lg-2 linha-de-pesquisa anime" data-anime="left">
-										<a href="materiais_digitais_para_povos_tradicionais.html">
+										<a href="{{route('povos.tradicionais')}}">
 											<div class="logo-linha-de-pesquisa">
 												<img src="{{asset('img/linhas_de_pesquisa/logos/povos-tradicionais4.png')}}" alt="">
 											</div>
 
 											<div class="label-linha-de-pesquisa">
-												Materiais Digitais para Povos Tradicionais
+												Tecnologias Educacionais para Povos Indígenas
 											</div>
 										</a>
 									</div>

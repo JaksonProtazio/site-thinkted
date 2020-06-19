@@ -112,7 +112,7 @@
 				</div>
 
 				<div class="col-12 col-sm-6 col-md-4 col-lg-4 espacoEquipe linkEquipe">
-					<a href="#" target="_blank">
+					<a href="http://lattes.cnpq.br/1585673927757260" target="_blank">
 						<div>
 							<img class="rounded-circle borda aumentar" src="{{asset('img/perfil_equipe/perfil9.png')}}" alt="Generic placeholder image" width="140" height="140">
 							<h2 class="nome-perfil aumentar">Jeniffer Macena</h2>
@@ -148,7 +148,7 @@
 				</div>
 
 				<div class="col-12 col-sm-6 col-md-4 col-lg-4 espacoEquipe linkEquipe">
-					<a href="#" target="_blank">
+					<a href="http://lattes.cnpq.br/3788978040867957" target="_blank">
 						<div>
 							<img class="rounded-circle borda aumentar" src="{{asset('img/perfil_equipe/perfil23.jpeg')}}" alt="Generic placeholder image" width="140" height="140">
 							<h2 class="nome-perfil aumentar">Marcos Guibson</h2>
