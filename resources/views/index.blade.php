@@ -184,7 +184,7 @@
 									</div>
 
 									<div class="col-lg-2 linha-de-pesquisa anime" data-anime="left">
-										<a href="{{route('povos.tradicionais')}}">
+										<a href="{{route('desenvolvimento.ODT')}}">
 											<div class="logo-linha-de-pesquisa">
 												<img src="{{asset('img/linhas_de_pesquisa/logos/objetos-digitais-tangiveis.png')}}" alt="">
 											</div>
