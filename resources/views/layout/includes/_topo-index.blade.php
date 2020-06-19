@@ -19,7 +19,7 @@
       <!--Início menu -->
 			<nav class="nav navbar navbar-expand-xl fixed-top navbar-light testeNav" id="menu">
 				<a id="logo_labted" class="navbar-brand" href="{{url('/')}}">
-					<img alt="Brand" src="{{asset('img/logo_thinkted.png')}}">
+					<img alt="Brand" src="{{asset('img/logo_thinkted.png')}}" width=150>
 				</a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle naviagtion">
 	   				<span class="navbar-toggler-icon"></span>
