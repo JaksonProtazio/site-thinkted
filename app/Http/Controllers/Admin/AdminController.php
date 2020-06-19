@@ -130,6 +130,7 @@ class AdminController extends Controller
       return view('admin.listar_noticias',compact('noticias'));
     }
 
+    /*
     public function cadastrarNoticia()
     {
       if(Gate::denies('noticia-create')){
@@ -258,7 +259,7 @@ class AdminController extends Controller
       File::delete($nome);
 
       return redirect()->route('listar.noticias');
-    }
+    }*/
 
 
     public function listarPublicacoes()
@@ -273,7 +274,7 @@ class AdminController extends Controller
 
     public function cadastrarPublicacao()
     {
-      if(Gate::denies('publicacao-create')){
+      if(Gate::denies('publicacao-add')){
         abort(403,"Acesso não autorizado!");
       }
 
@@ -282,7 +283,7 @@ class AdminController extends Controller
 
     public function salvarPublicacao(Request $dados)
     {
-      if(Gate::denies('publicacao-create')){
+      if(Gate::denies('publicacao-add')){
         abort(403,"Acesso não autorizado!");
       }
 
@@ -302,6 +303,52 @@ class AdminController extends Controller
 
       //salva no banco
       Publicacao::create($publicacao);
+      return redirect()->route('listar.publicacoes');
+    }
+
+    public function editarPublicacao($id)
+    {
+      if(Gate::denies('publicacao-edit')){
+        abort(403,"Acesso não autorizado!");
+      }
+
+      $publicacao = Publicacao::find($id);
+
+      return view('admin.editar_publicacao',compact('publicacao'));
+    }
+
+    public function atualizarPublicacao(Request $dados, $id){
+      if(Gate::denies('publicacao-edit')){
+        abort(403,"Acesso não autorizado!");
+      }
+
+      $arquivo = Publicacao::find($id);
+
+      $publicacao = $dados->all();
+
+      if($dados->hasFile('dir_arquivo')){
+        $arquivo = $dados->file('dir_arquivo');
+        $num = rand(1111,9999);
+        $dir = "adm/publicacao/upload_pdf";
+        $ex = $arquivo->guessClientExtension();
+        $nomeArquivo = "arquivo_".$num.".".$ex;
+        $arquivo->move($dir,$nomeArquivo);
+        $publicacao['dir_arquivo'] = $dir."/".$nomeArquivo;
+      }else{
+        $publicacao['dir_arquivo'] = $arquivo['dir_arquivo'];
+      }
+
+      Publicacao::find($id)->update($publicacao);
+
+      return redirect()->route('listar.publicacoes');
+    }
+
+    public function apagarPublicacao($id){
+      $publicacao = Publicacao::find($id);
+      $nome = $publicacao['dir_arquivo'];
+      Publicacao::find($id)->delete();
+      File::delete($nome);
+
       return redirect()->route('listar.publicacoes');
     }
 

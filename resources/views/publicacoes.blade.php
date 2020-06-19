@@ -14,7 +14,7 @@
 					<tr>
 						<th scope="col">Ano</th>
 						<th scope="col">Título</th>
-						<th scope="col">Autor</th>
+						<th scope="col">Evento</th>
 						<th width="30" scope="col">Ação</th>
 					</tr>
 				</thead>
@@ -23,7 +23,7 @@
 						<tr>
 							<td>{{$publicacao->ano}}</td>
 							<td>{{$publicacao->titulo}}</td>
-							<td>{{$publicacao->autor}}</td>
+							<td>{{$publicacao->evento}}</td>
 							<td>
 									<!--Faz download do arquivo pdf-->
 								<a href="{{$publicacao->dir_arquivo}}" download>

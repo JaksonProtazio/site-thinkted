@@ -30,13 +30,6 @@
                 </div>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Noticias</a>
-                <div class="dropdown-menu" aria-labelledby="dropdown01">
-                  <a class="dropdown-item" href="{{route('listar.noticias')}}">Listar Notícias</a>
-                  <a class="dropdown-item" href="{{route('cadastrar.noticia')}}">Inserir Notícias</a>
-                </div>
-              </li>
-              <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Publicações</a>
                 <div class="dropdown-menu" aria-labelledby="dropdown01">
                   <a class="dropdown-item" href="{{route('listar.publicacoes')}}">Listar Publicações</a>

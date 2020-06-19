@@ -17,8 +17,8 @@
       </div>
 
       <div class="form-group">
-        <label for="InputAutor">Autor</label>
-        <input type="text" class="form-control" name="autor" placeholder="Autor">
+        <label for="InputAutor">Evento</label>
+        <input type="text" class="form-control" name="evento" placeholder="Evento">
       </div>
 
       <div class="form-group">

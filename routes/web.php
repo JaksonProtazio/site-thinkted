@@ -68,16 +68,21 @@ Route::group(['middleware' => 'auth','prefix' => 'admin'], function () {
   Route::post('/atualizar-usuario/{id}',['as'=>'atualizar.usuario','uses'=>'Admin\AdminController@atualizarUsuario']);
   Route::get('/excluir-usuario/{id}',['as'=>'excluir.usuario','uses'=>'Admin\AdminController@apagarUsuario']);
 
+  //rotas de notícias
+  /*
   Route::get('/listar-noticias',['as'=>'listar.noticias','uses'=>'Admin\AdminController@listarNoticias']);
   Route::get('/cadastrar-noticia',['as'=>'cadastrar.noticia','uses'=>'Admin\AdminController@cadastrarNoticia']);
   Route::post('/salvar-noticia',['as'=>'salvar.noticia','uses'=>'Admin\AdminController@salvarNoticia']);
   Route::get('/editar-noticia/{id}',['as'=>'editar.noticia','uses'=>'Admin\AdminController@editarNoticia']);
   Route::put('/atualizar-noticia/{id}',['as'=>'atualizar.noticia','uses'=>'Admin\AdminController@atualizarNoticia']);
   Route::get('/deletar-noticia/{id}',['as'=>'deletar.noticia','uses'=>'Admin\AdminController@deletarNoticia']);
-
+*/
   Route::get('/listar-publicacoes',['as'=>'listar.publicacoes','uses'=>'Admin\AdminController@listarPublicacoes']);
   Route::get('/cadastrar-publicacao',['as'=>'cadastrar.publicacao','uses'=>'Admin\AdminController@cadastrarPublicacao']);
+  Route::get('/editar-publicacao/{id}',['as'=>'editar.publicacao','uses'=>'Admin\AdminController@editarPublicacao']);
   Route::post('/salvar-publicacao',['as'=>'salvar.publicacao','uses'=>'Admin\AdminController@salvarPublicacao']);
+  Route::put('/atualizar-publicacao/{id}',['as'=>'atualizar.publicacao','uses'=>'Admin\AdminController@atualizarPublicacao']);
+  Route::get('/apagaar-publicacao/{id}',['as'=>'apagar.publicacao','uses'=>'Admin\AdminController@apagarPublicacao']);
 
 
   Route::get('/listar-albuns',['as'=>'listar.albuns','uses'=>'Admin\AdminController@listarAlbuns']);

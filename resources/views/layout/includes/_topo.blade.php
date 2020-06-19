@@ -52,9 +52,6 @@
 
 
 						<li class="nav-item"><a class='nav-link {{$public or ''}}' href="{{route('publicacoes')}}" target="_blank">Publicações</a></li>
-
-
-						<li class="nav-item "><a class='nav-link {{$noticia or ''}}' href="{{route('noticias')}}" target="_blank">Notícias</a></li>
 						<li class="nav-item "><a class='nav-link {{$galeria or ''}}' href="{{route('galeria')}}" target="_blank">Galeria</a></li>
 						<li class="nav-item "><a class='nav-link {{$parceiros or ''}}' href="{{route('parceiros')}}" target="_blank">Parceiros</a></li>
 						<li class="nav-item"><a class='nav-link {{$contato or ''}}' href="{{route('contato')}}" target="_blank">Contato</a></li>

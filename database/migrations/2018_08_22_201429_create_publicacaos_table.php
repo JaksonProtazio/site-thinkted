@@ -17,7 +17,7 @@ class CreatePublicacaosTable extends Migration
             $table->increments('id');
             $table->string('ano');
             $table->string('titulo');
-            $table->string('autor');
+            $table->string('evento');
             $table->string('dir_arquivo');
             $table->timestamps();
         });
