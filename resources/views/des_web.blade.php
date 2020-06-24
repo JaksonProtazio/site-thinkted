@@ -8,7 +8,7 @@
 	<header>
 		<div id="geralHeader">
 			<div id="cabecalho-des-Web" class="jumbotron">
-				<h2 id="tit-cab-lin-pesq">Desenvolvimento Web</h2>
+				<h2 id="tit-cab-lin-pesq">Cognição e <br> Desenvolvimento Humano</h2>
 			</div>
 		</div>
 	</header>

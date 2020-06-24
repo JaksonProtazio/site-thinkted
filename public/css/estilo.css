@@ -4,7 +4,7 @@ html {
 }
 body {
   margin-bottom: 240px; /* Margin bottom by footer height */
-  font-family: 'Roboto', sans-serif;  
+  font-family: 'Roboto', sans-serif;
 }
 .footer {
   position: absolute;
@@ -43,7 +43,7 @@ nav.caminho{
 nav{
   background-color: white;
   box-shadow: 0px 1px 15px;
-  
+
 }
 
 @media(max-width: 1024px){
@@ -81,7 +81,7 @@ a.nav-link::before{
   height: 3px;
   bottom: 0;
   left: 0;
-  background: linear-gradient(90deg, rgba(198,16,16,1) 0%, rgba(233,178,51,1) 33%, rgba(124,204,86,1) 66%, rgba(47,128,181,1) 100%);  
+  background: linear-gradient(90deg, rgba(198,16,16,1) 0%, rgba(233,178,51,1) 33%, rgba(124,204,86,1) 66%, rgba(47,128,181,1) 100%);
   visibility: hidden;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
@@ -594,7 +594,7 @@ a:hover div.label-linha-de-pesquisa{
 }
 
 #resumoQuemSomos{
-  color: white;
+    color: white;
 }
 
 #saibaMais{
@@ -628,6 +628,14 @@ a:hover div.label-linha-de-pesquisa{
     font-size: 20px;
     width: 100px;
   }
+}
+/*Luiz Fabio*/
+/*Caso a tela fique muito grande, o texto fica com mais margens*/
+@media(min-width: 1500px){
+    #resumoQuemSomos{
+      margin-left: 25%;
+      margin-right: 25%;
+    }
 }
 /**************************************************************/
 
@@ -1394,13 +1402,109 @@ div#cabecalho-des-serious-games{
   -moz-border-radius: 90px; /*(navegadores Flock e Firefox)*/
   -webkit-border-radius: 90px; /*(navegadores Chrome e Safari)*/
 }
-
+/*Renderiza a logo dos jogos em "Linhas de Pesquisa/Desenvolvimento de Games"*/
 #projeto1SeriousGames{
   background: url('../img/linhas_de_pesquisa/projetos/serious-games/projeto1.png');
 }
 
 #projeto2SeriousGames{
   background: url('../img/linhas_de_pesquisa/projetos/serious-games/projeto2.png');
+}
+
+#projeto3SeriousGames{
+    background: url('../img/linhas_de_pesquisa/projetos/serious-games/projeto3.png');
+  }
+
+#projeto4SeriousGames{
+background: url('../img/linhas_de_pesquisa/projetos/serious-games/projeto4.png');
+}
+
+#projeto5SeriousGames{
+background: url('../img/linhas_de_pesquisa/projetos/serious-games/projeto5.png');
+}
+
+#projeto6SeriousGames{
+background: url('../img/linhas_de_pesquisa/projetos/serious-games/projeto6.png');
+}
+
+#projeto7SeriousGames{
+background: url('../img/linhas_de_pesquisa/projetos/serious-games/projeto7.png');
+}
+
+#projeto8SeriousGames{
+background: url('../img/linhas_de_pesquisa/projetos/serious-games/projeto8.png');
+}
+
+#projeto9SeriousGames{
+background: url('../img/linhas_de_pesquisa/projetos/serious-games/projeto9.png');
+}
+
+#projeto10SeriousGames{
+background: url('../img/linhas_de_pesquisa/projetos/serious-games/projeto10.png');
+}
+
+#projeto11SeriousGames{
+background: url('../img/linhas_de_pesquisa/projetos/serious-games/projeto11.png');
+}
+
+#projeto12SeriousGames{
+background: url('../img/linhas_de_pesquisa/projetos/serious-games/projeto12.png');
+}
+
+#projeto13SeriousGames{
+background: url('../img/linhas_de_pesquisa/projetos/serious-games/projeto13.png');
+}
+
+#projeto14SeriousGames{
+background: url('../img/linhas_de_pesquisa/projetos/serious-games/projeto14.png');
+}
+
+#projeto15SeriousGames{
+background: url('../img/linhas_de_pesquisa/projetos/serious-games/projeto15.png');
+}
+
+#projeto16SeriousGames{
+background: url('../img/linhas_de_pesquisa/projetos/serious-games/projeto16.png');
+}
+
+#projeto17SeriousGames{
+background: url('../img/linhas_de_pesquisa/projetos/serious-games/projeto17.png');
+}
+
+#projeto18SeriousGames{
+background: url('../img/linhas_de_pesquisa/projetos/serious-games/projeto18.png');
+}
+
+#projeto19SeriousGames{
+background: url('../img/linhas_de_pesquisa/projetos/serious-games/projeto19.png');
+}
+
+#projeto20SeriousGames{
+background: url('../img/linhas_de_pesquisa/projetos/serious-games/projeto20.png');
+}
+
+#projeto21SeriousGames{
+background: url('../img/linhas_de_pesquisa/projetos/serious-games/projeto21.png');
+}
+
+#projeto22SeriousGames{
+background: url('../img/linhas_de_pesquisa/projetos/serious-games/projeto22.png');
+}
+
+#projeto23SeriousGames{
+background: url('../img/linhas_de_pesquisa/projetos/serious-games/projeto23.png');
+}
+
+#projeto24SeriousGames{
+background: url('../img/linhas_de_pesquisa/projetos/serious-games/projeto24.png');
+}
+
+#projeto25SeriousGames{
+background: url('../img/linhas_de_pesquisa/projetos/serious-games/projeto25.png');
+}
+
+#projeto26SeriousGames{
+background: url('../img/linhas_de_pesquisa/projetos/serious-games/projeto26.png');
 }
 
 
@@ -1412,6 +1516,8 @@ div#cabecalho-des-serious-games{
 .innerProjetos{
  text-align: center;
  justify-content: center;
+ margin-top: 20px;
+ margin-bottom: 20px;
 }
 
 .logoProjeto{
@@ -1596,3 +1702,5 @@ h3.subtitulos.equipe{
   color: green;
   font-weight: bold;
 }
+
+
