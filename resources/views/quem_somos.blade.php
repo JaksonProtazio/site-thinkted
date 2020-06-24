@@ -1,6 +1,6 @@
 @extends('layout.site')
 
-@section('titulo','Laboratório de Tecnologias Educacionais - LabTEd')
+@section('titulo','Quem Somos - ThinkTEd')
 
 @section('conteudo')
 <div id="geral" align="center">

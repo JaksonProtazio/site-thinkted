@@ -1,6 +1,6 @@
 @extends('layout.site')
 
-@section('titulo','Laboratório de Tecnologias Educacionais - LabTEd')
+@section('titulo','Desenvolvimento de Games')
 
 @section('conteudo')
 	<header>

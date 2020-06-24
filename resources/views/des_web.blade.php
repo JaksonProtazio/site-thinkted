@@ -1,6 +1,6 @@
 @extends('layout.site')
 
-@section('titulo','Laboratório de Tecnologias Educacionais - LabTEd')
+@section('titulo','Cognição e Desenvolvimento Humano')
 
 @section('conteudo')
 <div id="geral">

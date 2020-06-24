@@ -1,6 +1,6 @@
 @extends('layout.site')
 
-@section('titulo','Laboratório de Tecnologias Educacionais - LabTEd')
+@section('titulo','Desenvolvimento de Objetos Digitais Tangíveis')
 
 @section('conteudo')
 <div id="geral">
