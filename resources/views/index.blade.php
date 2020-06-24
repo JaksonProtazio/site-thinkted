@@ -1,6 +1,6 @@
 @extends('layout.index')
 
-@section('titulo','Laboratório de Tecnologias Educacionais - LabTEd')
+@section('titulo','Thinkted Lab - Pesquisa e Desenvolvimento em Tecnologias Educacionais')
 
 @section('conteudo')
 <!-- Início Carrossel -->
