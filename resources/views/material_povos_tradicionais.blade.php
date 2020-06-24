@@ -1,6 +1,6 @@
 @extends('layout.site')
 
-@section('titulo','Materiais Digitais para Povos Tradiconais')
+@section('titulo','Tecnologias Educacionais para Povos Indígenas')
 
 @section('conteudo')
 <div id="geral">
